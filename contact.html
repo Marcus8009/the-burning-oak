@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Burning Oak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <h1>The Burning Oak</h1>
+                <p class="tagline">Japanese-Western Fusion</p>
+            </div>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="banner-content">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h3>Visit Us</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Ember Lane</p>
+                                <p>Metropolis, MP 12345</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Monday - Thursday: 5PM - 10PM</p>
+                                <p>Friday - Saturday: 5PM - 11PM</p>
+                                <p>Sunday: 5PM - 9PM</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(555) 123-4567</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@theburningoak.com</p>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <h4>Follow Us</h4>
+                            <div class="social-links">
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <h3>Send Us a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone (optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" disabled selected>Please select a subject</option>
+                                    <option value="reservation">Reservation Inquiry</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="private-event">Private Event</option>
+                                    <option value="question">General Question</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkmark"></span>
+                                    Sign up for our newsletter to receive updates and special offers
+                                </label>
+                            </div>
+                            <button type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <h3>Find Us</h3>
+                <div class="map-container">
+                    <!-- Placeholder for map -->
+                    <div class="map-placeholder">
+                        <img src="img/map.jpg" alt="Map to The Burning Oak location">
+                        <!-- In a real implementation, you'd replace this with an actual map embed -->
+                    </div>
+                </div>
+                <div class="directions">
+                    <h4>Getting Here</h4>
+                    <div class="directions-grid">
+                        <div class="direction-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <h5>By Car</h5>
+                                <p>Parking is available in our private lot behind the restaurant. Additional street parking is available on Ember Lane and surrounding streets.</p>
+                            </div>
+                        </div>
+                        <div class="direction-item">
+                            <i class="fas fa-subway"></i>
+                            <div>
+                                <h5>Public Transit</h5>
+                                <p>We are a 5-minute walk from the Central Station. Take the Blue Line to Central Station, exit east, and walk two blocks north.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h3>Frequently Asked Questions</h3>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you accept reservations?</h4>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we recommend making a reservation, especially for dinner service Thursday through Saturday. You can make a reservation by phone or by sending us a message through our contact form.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you accommodate dietary restrictions?</h4>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. Our menu indicates vegetarian and gluten-free options, and our chefs are happy to accommodate other dietary needs. Please let us know about any allergies or restrictions when you make your reservation or speak with your server.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Can you host private events?</h4>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer private dining options for groups and special events. We have a separate dining room that can accommodate up to 30 guests. Please contact us at least two weeks in advance to discuss your event needs.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Is there a dress code?</h4>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We suggest smart casual attire. While we don't enforce a strict dress code, most of our guests prefer to dress comfortably but elegantly for the dining experience.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Do you offer gift cards?</h4>
+                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, gift cards are available in any denomination. They can be purchased in person at the restaurant or by phone.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>We Look Forward to Welcoming You</h2>
+                <p>Join us for an unforgettable culinary journey at The Burning Oak.</p>
+                <div class="cta-buttons">
+                    <a href="menu.html" class="btn">View Our Menu</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>The Burning Oak</h2>
+                    <p>Japanese-Western Fusion</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h3>Hours</h3>
+                        <p>Monday - Thursday: 5PM - 10PM</p>
+                        <p>Friday - Saturday: 5PM - 11PM</p>
+                        <p>Sunday: 5PM - 9PM</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Ember Lane, Metropolis</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@theburningoak.com</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 The Burning Oak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

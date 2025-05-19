@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Burning Oak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <h1>The Burning Oak</h1>
+                <p class="tagline">Japanese-Western Fusion</p>
+            </div>
+        </div>
+        <nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="banner-content">
+                <h2>Our Menu</h2>
+                <p>Crafted with passion, served with pride</p>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <div class="container">
+                <div class="menu-navigation">
+                    <button class="menu-nav-item active" data-target="starters">Starters</button>
+                    <button class="menu-nav-item" data-target="mains">Main Courses</button>
+                    <button class="menu-nav-item" data-target="sides">Sides</button>
+                    <button class="menu-nav-item" data-target="desserts">Desserts</button>
+                    <button class="menu-nav-item" data-target="drinks">Drinks</button>
+                </div>
+
+                <!-- Starters Menu -->
+                <div class="menu-category active" id="starters">
+                    <h3 class="menu-category-title">Starters</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Tempura Brussels Sprouts</h4>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="description">Crispy tempura brussels sprouts with bourbon maple glaze, togarashi spice, and smoked sea salt.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Seared Hokkaido Scallops</h4>
+                                <span class="price">$18</span>
+                            </div>
+                            <p class="description">Oak-seared Hokkaido scallops with bacon dashi, crispy pancetta, and yuzu brown butter.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Karaage Chicken Sliders</h4>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Japanese fried chicken on mini brioche buns with wasabi aioli, pickled cabbage, and spicy maple drizzle.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Roasted Bone Marrow</h4>
+                                <span class="price">$16</span>
+                            </div>
+                            <p class="description">Oak-roasted bone marrow with miso glaze, yuzu kosho, pickled mushrooms, and toasted milk bread.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Hamachi Crudo</h4>
+                                <span class="price">$17</span>
+                            </div>
+                            <p class="description">Yellowtail sashimi with burnt citrus ponzu, smoked olive oil, charred scallion, and crispy quinoa.</p>
+                            <div class="dietary-info">
+                                <span class="gluten-free" title="Gluten Free">GF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Courses -->
+                <div class="menu-category" id="mains">
+                    <h3 class="menu-category-title">Main Courses</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Oak-Smoked Miso Black Cod</h4>
+                                <span class="price">$36</span>
+                            </div>
+                            <p class="description">Traditional miso-marinated black cod, gently smoked over oak chips and finished with a western herb crust. Served with charred broccolini and yuzu hollandaise.</p>
+                            <div class="featured-tag">Signature</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Wagyu Tataki Burger</h4>
+                                <span class="price">$28</span>
+                            </div>
+                            <p class="description">Seared A5 wagyu beef with ponzu glaze, served on a house-made brioche bun with umami aioli, pickled daikon, and charcoal salt fries.</p>
+                            <div class="featured-tag">Signature</div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Fire-Glazed Duck Breast</h4>
+                                <span class="price">$34</span>
+                            </div>
+                            <p class="description">Duck breast glazed with bourbon-barrel aged mirin, served with smoked sweet potato puree, sautéed greens, and blackberry hoisin sauce.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Sake-Braised Short Ribs</h4>
+                                <span class="price">$32</span>
+                            </div>
+                            <p class="description">72-hour sake-braised short ribs with wasabi root gremolata, roasted garlic mashed potatoes, and oak-smoked vegetables.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Miso Risotto with Wild Mushrooms</h4>
+                                <span class="price">$24</span>
+                            </div>
+                            <p class="description">Arborio rice cooked with white miso and sake, finished with oak-grilled seasonal mushrooms, aged parmesan, and shiso oil.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Dashi-Poached Lobster</h4>
+                                <span class="price">$42</span>
+                            </div>
+                            <p class="description">Maine lobster tail poached in kombu dashi, served with roasted corn succotash, charred lemon, and seaweed butter.</p>
+                            <div class="dietary-info">
+                                <span class="gluten-free" title="Gluten Free">GF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-category" id="sides">
+                    <h3 class="menu-category-title">Sides</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Truffle Furikake Fries</h4>
+                                <span class="price">$9</span>
+                            </div>
+                            <p class="description">Hand-cut fries tossed with truffle oil, house-made furikake, and Kewpie mayo dipping sauce.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Miso-Glazed Eggplant</h4>
+                                <span class="price">$10</span>
+                            </div>
+                            <p class="description">Japanese eggplant glazed with sweet miso, topped with crispy garlic chips and toasted sesame.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                                <span class="gluten-free" title="Gluten Free">GF</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Grilled Shishito Peppers</h4>
+                                <span class="price">$8</span>
+                            </div>
+                            <p class="description">Oak-grilled shishito peppers with smoked sea salt and lemon zest.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                                <span class="gluten-free" title="Gluten Free">GF</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Umami Mac & Cheese</h4>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="description">Elbow pasta in a rich cheese sauce infused with miso and kombu, topped with sourdough breadcrumbs.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-category" id="desserts">
+                    <h3 class="menu-category-title">Desserts</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Charred Yuzu Soufflé</h4>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Light-as-air yuzu soufflé with a flame-caramelized top and bourbon-vanilla crème anglaise.</p>
+                            <div class="featured-tag">Signature</div>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Maple Miso Crème Brûlée</h4>
+                                <span class="price">$12</span>
+                            </div>
+                            <p class="description">Classic crème brûlée infused with white miso and maple, topped with a caramelized sugar crust.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                                <span class="gluten-free" title="Gluten Free">GF</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Black Sesame Panna Cotta</h4>
+                                <span class="price">$11</span>
+                            </div>
+                            <p class="description">Silky black sesame panna cotta with matcha shortbread, charred orange segments, and bourbon caramel.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Oak-Smoked Chocolate Fondant</h4>
+                                <span class="price">$13</span>
+                            </div>
+                            <p class="description">Warm chocolate cake with a molten center, smoked sea salt, hojicha ice cream, and candied pecans.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-category" id="drinks">
+                    <h3 class="menu-category-title">Drinks</h3>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Smoked Cherry Old Fashioned</h4>
+                                <span class="price">$16</span>
+                            </div>
+                            <p class="description">Japanese whisky, cherry wood smoke, angostura bitters, and a charred orange peel.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Yuzu Gimlet</h4>
+                                <span class="price">$14</span>
+                            </div>
+                            <p class="description">Gin, fresh yuzu juice, shiso-infused simple syrup, and a splash of sparkling sake.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Matcha Whisky Sour</h4>
+                                <span class="price">$15</span>
+                            </div>
+                            <p class="description">Bourbon, ceremonial grade matcha, fresh lemon, maple syrup, and egg white.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Sake Flight</h4>
+                                <span class="price">$24</span>
+                            </div>
+                            <p class="description">Three premium sakes - junmai daiginjo, nigori, and aged koshu - each paired with a small bite.</p>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Smoked Maple Lemonade (Non-Alcoholic)</h4>
+                                <span class="price">$8</span>
+                            </div>
+                            <p class="description">Fresh lemonade infused with smoked maple syrup, activated charcoal, and torched rosemary.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                                <span class="gluten-free" title="Gluten Free">GF</span>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <h4>Yuzu Sparkling Tea (Non-Alcoholic)</h4>
+                                <span class="price">$7</span>
+                            </div>
+                            <p class="description">Cold-brewed hojicha tea with yuzu juice, honey, and sparkling water.</p>
+                            <div class="dietary-info">
+                                <span class="vegetarian" title="Vegetarian">V</span>
+                                <span class="gluten-free" title="Gluten Free">GF</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-notes">
+            <div class="container">
+                <div class="notes-content">
+                    <div class="note">
+                        <h4><i class="fas fa-info-circle"></i> Dietary Information</h4>
+                        <p>V - Vegetarian | GF - Gluten Free</p>
+                        <p>Please inform your server of any allergies or dietary restrictions. Many dishes can be modified to accommodate your needs.</p>
+                    </div>
+                    <div class="note">
+                        <h4><i class="fas fa-leaf"></i> Our Ingredients</h4>
+                        <p>We source our ingredients from local farms and sustainable suppliers whenever possible. Our seafood is always wild-caught or responsibly farmed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>The Burning Oak</h2>
+                    <p>Japanese-Western Fusion</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h3>Hours</h3>
+                        <p>Monday - Thursday: 5PM - 10PM</p>
+                        <p>Friday - Saturday: 5PM - 11PM</p>
+                        <p>Sunday: 5PM - 9PM</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Contact</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Ember Lane, Metropolis</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@theburningoak.com</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 The Burning Oak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
