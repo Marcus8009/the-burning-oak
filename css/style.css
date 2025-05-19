@@ -1018,8 +1018,28 @@ input:focus, textarea:focus, select:focus {
     cursor: pointer;
 }
 
-.checkbox-container input {
-    width: auto;
+.btn-disabled {
+    background-color: var(--color-ash);
+    cursor: not-allowed;
+}
+
+.btn-disabled:hover {
+    background-color: var(--color-ash);
+    transform: none;
+    box-shadow: none;
+}
+
+.form-info-note {
+    margin-bottom: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: var(--color-ash-light);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.9rem;
+}
+
+.form-info-note i {
+    margin-right: var(--spacing-xs);
+    color: var(--color-ash);
 }
 
 .map-section {

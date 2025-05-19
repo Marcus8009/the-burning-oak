@@ -137,67 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // --------- CONTACT FORM VALIDATION ---------
-    const contactForm = document.getElementById('contactForm');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            
-            // Simple validation
-            let isValid = true;
-            const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            const subject = document.getElementById('subject');
-            const message = document.getElementById('message');
-            
-            // Check required fields
-            [name, email, subject, message].forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.style.borderColor = 'red';
-                } else {
-                    field.style.borderColor = '';
-                }
-            });
-            
-            // Validate email format
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (email.value.trim() && !emailRegex.test(email.value)) {
-                isValid = false;
-                email.style.borderColor = 'red';
-            }
-            
-            // If form is valid, show success message
-            if (isValid) {
-                // In a real implementation, you would send the form data to a server
-                // For now, just show a success message
-                const formContainer = contactForm.parentElement;
-                
-                // Create success message
-                const successMessage = document.createElement('div');
-                successMessage.className = 'success-message';
-                successMessage.innerHTML = `
-                    <i class="fas fa-check-circle"></i>
-                    <h3>Message Sent!</h3>
-                    <p>Thank you for contacting us. We'll get back to you shortly.</p>
-                `;
-                
-                // Replace form with success message
-                formContainer.innerHTML = '';
-                formContainer.appendChild(successMessage);
-                
-                // Style success message
-                successMessage.style.textAlign = 'center';
-                successMessage.style.padding = '2rem';
-                
-                const icon = successMessage.querySelector('i');
-                icon.style.fontSize = '3rem';
-                icon.style.color = '#388E3C';
-                icon.style.marginBottom = '1rem';
-            }
-        });
-    }
+    // Removed form-related code since the form has been removed
 
     // --------- SCROLL ANIMATIONS ---------
     // Get all sections for potential animations

@@ -43,89 +43,69 @@
 
         <section class="contact-info">
             <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-details">
-                        <h3>Visit Us</h3>
-                        <div class="info-item">
+                <div class="contact-content">
+                    <div class="contact-card">
+                        <div class="contact-header">
                             <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <p>123 Ember Lane</p>
-                                <p>Metropolis, MP 12345</p>
-                            </div>
+                            <h3>Location</h3>
                         </div>
-                        <div class="info-item">
+                        <div class="contact-body">
+                            <p>123 Ember Lane</p>
+                            <p>Metropolis, MP 12345</p>
+                            <div class="divider"></div>
+                            <p class="contact-note">Located in the heart of downtown, with convenient access to public transit and parking.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-header">
                             <i class="fas fa-clock"></i>
-                            <div>
-                                <h4>Hours</h4>
-                                <p>Monday - Thursday: 5PM - 10PM</p>
-                                <p>Friday - Saturday: 5PM - 11PM</p>
-                                <p>Sunday: 5PM - 9PM</p>
-                            </div>
+                            <h3>Hours</h3>
                         </div>
-                        <div class="info-item">
+                        <div class="contact-body">
+                            <p><span class="day">Monday - Thursday:</span> 5PM - 10PM</p>
+                            <p><span class="day">Friday - Saturday:</span> 5PM - 11PM</p>
+                            <p><span class="day">Sunday:</span> 5PM - 9PM</p>
+                            <div class="divider"></div>
+                            <p class="contact-note">Kitchen closes 30 minutes before closing time. Reservations recommended for weekends.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-header">
                             <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>(555) 123-4567</p>
-                            </div>
+                            <h3>Get in Touch</h3>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <p>info@theburningoak.com</p>
-                            </div>
-                        </div>
-                        <div class="social">
-                            <h4>Follow Us</h4>
-                            <div class="social-links">
-                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            </div>
+                        <div class="contact-body">
+                            <p><i class="fas fa-phone-alt contact-icon"></i> (555) 123-4567</p>
+                            <p><i class="fas fa-envelope contact-icon"></i> info@theburningoak.com</p>
+                            <div class="divider"></div>
+                            <p class="contact-note">For reservations, please call during business hours or email us anytime.</p>
                         </div>
                     </div>
-                    <div class="contact-form-container">
-                        <h3>Send Us a Message</h3>
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone (optional)</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="" disabled selected>Please select a subject</option>
-                                    <option value="reservation">Reservation Inquiry</option>
-                                    <option value="feedback">Feedback</option>
-                                    <option value="private-event">Private Event</option>
-                                    <option value="question">General Question</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label class="checkbox-container">
-                                    <input type="checkbox" id="newsletter" name="newsletter">
-                                    <span class="checkmark"></span>
-                                    Sign up for our newsletter to receive updates and special offers
-                                </label>
-                            </div>
-                            <button type="submit" class="btn">Send Message</button>
-                        </form>
+                </div>
+                
+                <div class="social-section">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links-large">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Yelp">
+                            <i class="fab fa-yelp"></i>
+                            <span>Yelp</span>
+                        </a>
                     </div>
+                    <p class="social-description">Follow us on social media for the latest updates, special events, and behind-the-scenes glimpses of our culinary creations.</p>
                 </div>
             </div>
         </section>
@@ -172,7 +152,7 @@
                             <span class="toggle-icon"><i class="fas fa-plus"></i></span>
                         </div>
                         <div class="faq-answer">
-                            <p>Yes, we recommend making a reservation, especially for dinner service Thursday through Saturday. You can make a reservation by phone or by sending us a message through our contact form.</p>
+                            <p>Yes, we recommend making a reservation, especially for dinner service Thursday through Saturday. You can make a reservation by phone at (555) 123-4567.</p>
                         </div>
                     </div>
                     <div class="faq-item">
